@@ -14,19 +14,12 @@ enclosure's top face. Nothing about the existing enclosure changes.
 
 ## 🧊 Interactive 3D
 
-The model is up on GitHub's built-in 3D viewer — open it and drag it around:
+The model is live in GitHub's built-in 3D viewer — click through and drag it around:
 
 > 👉 [**Open the 3D model** — `OpenHome_Pi_Case.stl`](OpenHome_Pi_Case.stl)
 
-> 🎨 **View of the debossed brand** — `PRECIADO TECH`:
+> 🎨 **Debossed brand** — `PRECIADO TECH` on top:
 > <br><img src="assets/top-view.gif" alt="Top-down rotating view showing PRECIADO TECH debossed on top" width="320">
-
-## Files
-
-| File | What it is |
-|---|---|
-| [`OpenHome_Pi_Case.stl`](OpenHome_Pi_Case.stl) | Ready to slice. **"PRECIADO TECH"** debossed on top. |
-| [`assets/`](assets/) | Renders: banner, rotating 3D previews, static views. |
 
 ## Size
 
@@ -42,15 +35,11 @@ a small margin all the way around.
 
 - **Ethernet + 4× USB-A** — one large 54 × 23.5 mm window on the short end
 - **USB-C power, 2× micro-HDMI, 3.5 mm jack** — 58 × 19 mm window on the long side
-- **microSD** — 16 × 12 mm slot on the opposite short end
 - **Wire exit notch** — 15 mm notch at the top of the back long side for the
   speaker/GPIO leads
 - **Side grills** — vertical slots on three sides, bottom 5 mm left solid so the
   rim stays stiff
 - **Top grill** — six rows of slots either side of the name
-
-(No standoff pass-through holes — the standoffs stay under the lid. The parametric
-source has a `STANDOFF_HOLES` flag if you ever want them back.)
 
 The big side window and the top slots give a straight convection path — cool air
 in low through the grills, hot air out the top.
@@ -60,33 +49,7 @@ in low through the grills, hot air out the top.
 **Print it upside down — top face flat on the plate.** The STL is already
 oriented that way, so just drop it in and slice.
 
-- No supports needed anywhere
 - 0.2 mm layers, 3 walls, 15% infill
 - The debossed name prints against the build plate, so it comes out crisp
 
 If you want the text in a second color, add a filament change at ~0.6 mm.
-
-## Changing the name
-
-The name is set in the parametric source (`.scad`), which auto-shrinks to fit, so
-longer names still work. Or use a blank variant and add text with the slicer's
-text tool.
-
-## Before you print — two numbers worth checking
-
-Built from an approximate 90 × 60 × 27 mm stack plus margin. Measure your actual
-stack from the enclosure's top face:
-
-- `STACK_H` — top face to the tallest thing on the stack.
-  If the lid bottoms out before it seats, raise this.
-- `STACK_L` / `STACK_W` — the footprint including how far the USB and Ethernet
-  jacks hang past the board edge.
-
-Everything else keys off those three numbers, so a re-export takes seconds.
-Also worth a dry check: the port windows are deliberately tall so the exact
-height of the Pi above the face doesn't have to be exact — but confirm the
-USB-C plug clears the bottom edge of its window.
-
-## License
-
-[MIT](LICENSE) © Preciado Tech.
