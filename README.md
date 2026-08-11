@@ -2,16 +2,6 @@
   <img src="assets/banner.png" alt="OpenHome Dev Kit — Raspberry Pi top shroud render" width="100%">
 </p>
 
-# OpenHome Dev Kit — Raspberry Pi Top Shroud
-
-A cover for the exposed Pi 4 + OpenHome HAT stack that sits on top of the printed
-speaker enclosure. Open bottom, drops straight over the stack, rests on the
-enclosure's top face. Nothing about the existing enclosure changes.
-
-<p align="center">
-  <img src="assets/rotate.gif" alt="Rotating 3D view of the case" width="380">
-</p>
-
 ## 🧊 Interactive 3D
 
 The model is live in GitHub's built-in 3D viewer — click through and drag it around:
