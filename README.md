@@ -29,6 +29,5 @@ a small margin all the way around.
 **Print it upside down — top face flat on the plate.** The STL is already
 oriented that way, so just drop it in and slice.
 
-- No supports needed anywhere
 - 0.2 mm layers, 3 walls, 15% infill
 
